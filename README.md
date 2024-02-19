@@ -1,16 +1,10 @@
 # ChatGemini
 
-This repository contains a Python implementation of ChatGPT utilizing the Google Gemini library. ChatGPT is a conversational language model based on the GPT (Generative Pre-trained Transformer) architecture developed by OpenAI. Google Gemini is a library for building and training large-scale deep learning models.
+ChatGemini provides a Python implementation of ChatGPT utilizing the Google Gemini library.
 
 ## Overview
 
 ChatGPT is a conversational AI model capable of generating human-like responses given a prompt or input text. This repository provides an implementation of ChatGPT using the Google Gemini library, allowing users to leverage the power of Gemini for building and training their own conversational models.
-
-## Features
-
-- Implementation of ChatGPT using the Google Gemini library.
-- Easy-to-use interface for generating responses from the trained ChatGPT model.
-- Example scripts and notebooks demonstrating how to train and utilize the model.
 
 ## Requirements
 
@@ -18,49 +12,35 @@ ChatGPT is a conversational AI model capable of generating human-like responses 
 - Google Gemini library (installation instructions provided in the documentation)
 - Additional dependencies as outlined in the `requirements.txt` file
 
-## Installation
+## Getting Started
 
-1. Clone the repository:
+### Installation
 
-   ```bash
-   git clone https://github.com/yourusername/ChatGPT-GoogleGemini.git
-   ```
+Clone the repository to your local machine:
 
-2. Navigate to the cloned directory:
+```bash
+git clone https://github.com/mattheworford/chatgemini.git
+```
 
-   ```bash
-   cd ChatGPT-GoogleGemini
-   ```
+Change directory to the project folder:
 
-3. Install the required dependencies:
+```bash
+cd chatgemini
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+Install the required dependencies:
 
-4. Follow the instructions in the documentation to set up the Google Gemini library and obtain necessary credentials or API keys.
+```bash
+pip3 install -r requirements.txt
+```
 
-## Usage
+### Usage
 
-1. Training the Model:
+To start the Streamlit app, run the following command:
 
-   - Use provided data or your custom dataset to train the ChatGPT model.
-   - Fine-tune the model using the `train.py` script, providing appropriate parameters and data paths.
-
-2. Generating Responses:
-
-   - Utilize the trained model to generate responses using the `generate.py` script or the provided Jupyter notebooks.
-
-3. Integration:
-   - Integrate the trained model into your application or system for various conversational use cases.
-
-## Documentation
-
-Detailed documentation and examples are provided in the `docs` directory. Refer to the documentation for information on installation, usage, training the model, and generating responses.
-
-## Contributing
-
-Contributions to the ChatGPT implementation using Google Gemini are welcome! If you have suggestions, feature requests, or bug reports, please submit them via issues or open a pull request.
+```bash
+$ streamlit run chatgemini/app.py
+```
 
 ## License
 
@@ -69,7 +49,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Acknowledgments
 
 Special thanks to the developers of Google Gemini and the contributors to the ChatGPT project for making this implementation possible.
-
----
-
-Feel free to customize this README according to your specific implementation details, usage instructions, and licensing terms.
