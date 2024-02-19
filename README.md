@@ -2,16 +2,6 @@
 
 ChatGemini provides a Python implementation of ChatGPT utilizing the Google Gemini library.
 
-## Overview
-
-ChatGPT is a conversational AI model capable of generating human-like responses given a prompt or input text. This repository provides an implementation of ChatGPT using the Google Gemini library, allowing users to leverage the power of Gemini for building and training their own conversational models.
-
-## Requirements
-
-- Python 3.x
-- Google Gemini library (installation instructions provided in the documentation)
-- Additional dependencies as outlined in the `requirements.txt` file
-
 ## Getting Started
 
 ### Installation
@@ -42,10 +32,16 @@ To start the Streamlit app, run the following command:
 $ streamlit run chatgemini/app.py
 ```
 
+### Testing
+
+To run tests for the project, navigate to the root folder and run the following command:
+
+```bash
+python3 -m unittest
+```
+
+This will run all tests in the `tests` directory.
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Acknowledgments
-
-Special thanks to the developers of Google Gemini and the contributors to the ChatGPT project for making this implementation possible.
