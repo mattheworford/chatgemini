@@ -1,7 +1,6 @@
-import os
 import google.generativeai as genai
 
-from secret_manager import SecretManagerClient
+from clients.secret_manager import SecretManagerClient
 
 secret_manager_client = SecretManagerClient()
 api_key = secret_manager_client.access_secret_version("AI_STUDIO_API_KEY")
