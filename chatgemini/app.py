@@ -3,14 +3,6 @@ import google.generativeai as genai
 
 from clients.secret_manager import SecretManagerClient
 
-HARM_CATEGORIES = [
-    "HARM_CATEGORY_DANGEROUS",
-    "HARM_CATEGORY_HARASSMENT",
-    "HARM_CATEGORY_HATE_SPEECH",
-    "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-    "HARM_CATEGORY_DANGEROUS_CONTENT",
-]
-
 
 class ChatApp:
     def __init__(self):
@@ -78,7 +70,6 @@ class ChatApp:
             response = self.model.generate_content(
                 query,
                 generation_config=self.get_generation_config(),
-                safety_settings=self.get_safety_settings(),
             )
             self.handle_response(response, query)
         except Exception as e:
@@ -95,12 +86,6 @@ class ChatApp:
             top_k=self.top_k if self.top_k_sampling_enabled else None,
             temperature=self.temperature,
         )
-
-    def get_safety_settings(self):
-        return [
-            {"category": category, "threshold": "BLOCK_NONE"}
-            for category in HARM_CATEGORIES
-        ]
 
     def handle_response(self, response, query):
         st.session_state.messages.append({"role": "user", "content": query})
