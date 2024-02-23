@@ -4,6 +4,7 @@ import google.generativeai as genai
 from clients.secret_manager import SecretManagerClient
 
 HARM_CATEGORIES = [
+    "HARM_CATEGORY_UNSPECIFIED",
     "HARM_CATEGORY_DANGEROUS",
     "HARM_CATEGORY_HARASSMENT",
     "HARM_CATEGORY_HATE_SPEECH",
