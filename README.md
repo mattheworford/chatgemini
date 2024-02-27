@@ -1,6 +1,6 @@
 # ChatGemini
 
-ChatGemini provides a Python implementation of a ChatGPT-like UI for interacting with the Google Gemini library.
+ChatGemini provides a Python implementation of a ChatGPT-like UI for interacting with the Google Gemini LLM.
 
 ## Getting Started
 
